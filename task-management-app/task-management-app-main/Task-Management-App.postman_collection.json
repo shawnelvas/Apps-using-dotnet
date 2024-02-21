@@ -1,0 +1,176 @@
+{
+	"info": {
+		"_postman_id": "72e31ddf-40f7-40f7-84ab-5d0d733def14",
+		"name": "Task-Management-App",
+		"description": "Shaunak Bale",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "32951675"
+	},
+	"item": [
+		{
+			"name": "Adding First Task",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"title\": \"Testing Register Module\",\r\n  \"description\": \"Test the Register module within 2-3 days\",\r\n  \"status\": \"New\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:5215/api/Task/Task/",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5215",
+					"path": [
+						"api",
+						"Task",
+						"Task",
+						""
+					]
+				},
+				"description": "Adding the first task"
+			},
+			"response": []
+		},
+		{
+			"name": "Adding Second Task",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"title\": \"Start Learning Python\",\r\n  \"description\": \"Start Python Udemy Course\",\r\n  \"status\": \"New\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:5215/api/Task/Task/",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5215",
+					"path": [
+						"api",
+						"Task",
+						"Task",
+						""
+					]
+				},
+				"description": "Adding Second Task"
+			},
+			"response": []
+		},
+		{
+			"name": "Get All Tasks ",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:5215/api/Task/Task/",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5215",
+					"path": [
+						"api",
+						"Task",
+						"Task",
+						""
+					]
+				},
+				"description": "Get All Tasks"
+			},
+			"response": []
+		},
+		{
+			"name": "Get Task By Id",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:5215/api/Task/Task/6",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5215",
+					"path": [
+						"api",
+						"Task",
+						"Task",
+						"6"
+					]
+				},
+				"description": "Get Task By Id"
+			},
+			"response": []
+		},
+		{
+			"name": "Updating Task By Id",
+			"request": {
+				"method": "PATCH",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"title\": \"C# Learning\",\r\n  \"description\": \"Learn C# Course\",\r\n  \"status\": \"Done\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:5215/api/Task/Task/7",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5215",
+					"path": [
+						"api",
+						"Task",
+						"Task",
+						"7"
+					]
+				},
+				"description": "Updating Task With Id"
+			},
+			"response": []
+		},
+		{
+			"name": "Deleting Task",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:5215/api/Task/Task/7",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5215",
+					"path": [
+						"api",
+						"Task",
+						"Task",
+						"7"
+					]
+				},
+				"description": "Deleting Task With Id"
+			},
+			"response": []
+		}
+	]
+}
